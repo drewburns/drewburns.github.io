@@ -1,0 +1,333 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Survey-Rails Project - Site Title</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Site Title">
+<meta property="og:title" content="Survey-Rails Project">
+
+
+  <link rel="canonical" href="http://drewburns.github.io/Survey-Rails-Project/">
+  <meta property="og:url" content="http://drewburns.github.io/Survey-Rails-Project/">
+
+
+
+  <meta property="og:description" content="I planned to write this post yesterday, but getting my wisdom teeth out hurt a lot more than I expected.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2015-08-12T09:25:05-04:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Your Name",
+      "url" : "http://drewburns.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://drewburns.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Site Title Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://drewburns.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://drewburns.github.io/">Site Title</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://drewburns.github.io/about_me_test/">About</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Survey-Rails Project">
+    <meta itemprop="description" content="I planned to write this post yesterday, but getting my wisdom teeth out hurt a lot more than I expected.">
+    <meta itemprop="datePublished" content="August 12, 2015">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Survey-Rails Project
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>I planned to write this post yesterday, but getting my wisdom teeth out hurt a lot more than I expected.</p>
+
+<p>Anyways, I have been working on this project for the past couple of weeks and I think I have gotten it to a point that I am happy with.</p>
+
+<p>Check out the <a href="https://github.com/drewburns/survey_rails">github</a> and <a href="https://survey-rails.herokuapp.com">survey-rails</a> test site.</p>
+
+<p>This was a good project to work on because it involved many models working togethere and also included heavy ajax which was something I needed to learn. In this website, a user can log in or create an account. From there, they can create surveys, take surveys, and see the stats of the results of their surveys.</p>
+
+<h3> What I learned: </h3>
+
+<ol>
+	<li>
+		 One of the most important bits of information I learned was that by adding 
+		
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">		 <span class="ss">remote: </span><span class="kp">true</span>
+		</code></pre></figure>
+
+		to my forms, it would automatically submit via ajax. This saved me time from having to write the ajax for each submit.
+	</li>
+	<br />
+	<li>
+		After making my own flash messages on the last project, I experimented with toastr messages which are a lot cleaner and look nicer than the ones I was making.
+	</li>
+	<br />
+
+	<li>
+		By using 6 models in the website, it forced me to think about how each model was interacting and how I could connect them. 
+	</li>
+	<br />
+
+	<li>
+		I also experimented with foundation icons (which don't seem to work all the time on the test site, but do locally). They added a nice touch to the site and make it easier to navigate.
+	</li>
+	<br />
+
+	<li>
+		I added a bar graph and pie graph in the stats section for each question on the survey. I used google charts which worked very well. This also was good practice for displaying data, which my next project will be on.
+	</li>
+	<br />
+
+	<li>
+		On my route to understanding how jquery and ajax work, I had to learn more about js.erb files and how rendering works.
+		
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">		 <span class="nb">format</span><span class="p">.</span><span class="nf">js</span> <span class="p">{</span><span class="n">render</span> <span class="ss">:file</span> <span class="o">=&gt;</span> <span class="s2">"/questions/update.js.erb"</span> <span class="p">,</span> <span class="ss">content_type: </span><span class="s1">'text/javascript'</span><span class="p">,</span> <span class="ss">:locals</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:question</span> <span class="o">=&gt;</span> <span class="vi">@question</span><span class="p">,</span> <span class="ss">:choice</span> <span class="o">=&gt;</span> <span class="no">Choice</span><span class="p">.</span><span class="nf">new</span><span class="p">}</span> <span class="p">}</span>
+		</code></pre></figure>
+
+		before doing this project, I had no idea what the render block was for but after researching it, I found the purpose. It finds the type of request being sent and matches the type to the correct response. This was useful in this project because it allowed me to give error and success messages along with updating the page.
+	</li>
+	<br />
+	<li>
+		One major thing I learned during the project was performance testing. I used both a website called loader.io where I did load testing on getting pages, along side with benchmarking to test post routes.
+		I wrote this <a href="https://github.com/drewburns/survey_rails/blob/master/test/performance/surveys_test.rb"> test page </a> which along with fixtures to test how fast the server could respond to mulitple requests.
+
+		
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">		<span class="c1"># rake test:benchmark</span>
+		<span class="no">SurveysTest</span><span class="c1">#test_index (1.45 sec warmup)</span>
+		           <span class="ss">wall_time: </span><span class="mi">5</span> <span class="n">ms</span>
+		              <span class="ss">memory: </span><span class="n">unsupported</span>
+		             <span class="ss">objects: </span><span class="n">unsupported</span>
+		             <span class="ss">gc_runs: </span><span class="mi">0</span>
+		             <span class="ss">gc_time: </span><span class="mi">0</span> <span class="n">ms</span>
+		<span class="o">.</span><span class="no">SurveysTest</span><span class="c1">#test_submit_survey (1.64 sec warmup)</span>
+		<span class="c1"># ran this test 350 times</span>
+		           <span class="ss">wall_time: </span><span class="mi">1</span><span class="o">.</span><span class="mi">54</span> <span class="n">sec</span>
+		              <span class="ss">memory: </span><span class="n">unsupported</span>
+		             <span class="ss">objects: </span><span class="n">unsupported</span>
+		             <span class="ss">gc_runs: </span><span class="mi">3</span>
+		             <span class="ss">gc_time: </span><span class="mi">105</span> <span class="n">ms</span>
+		<span class="o">.</span><span class="no">SurveysTest</span><span class="c1">#test_show (7 ms warmup)</span>
+		           <span class="ss">wall_time: </span><span class="mi">6</span> <span class="n">ms</span>
+		              <span class="ss">memory: </span><span class="n">unsupported</span>
+		             <span class="ss">objects: </span><span class="n">unsupported</span>
+		             <span class="ss">gc_runs: </span><span class="mi">0</span>
+		             <span class="ss">gc_time: </span><span class="mi">0</span> <span class="n">ms</span>
+		</code></pre></figure>
+
+		It also created a file to view the records in which I could use to visualize the results of the test.
+
+		From the loader.io test, which tested the process of getting the survey:
+		<img src="https://i.gyazo.com/cbff3ee5677b71ed683941ccb1bca372.png" />
+		This result was longer than the test I ran with benchmark but it was on heroku which is slower than the local environment.
+	</li>
+	<br />
+</ol>
+
+<h3> What I want to learn: </h3>
+
+<ol>
+	<li>
+		 Even though the ajax worked well most of the time, there were still on rare occasion times when it wouldn't do what I was expecting it to. I want to become better at ajax and jquery so I can make my projects as easy to use as possible.
+	</li>
+	<br />
+	<li>
+		 I also want to learn more about the asset pipeline because I have a feeling that is the reason why the icons aren't working in production.
+	</li>
+	<br />
+</ol>
+
+<h3> Feedback from testing: </h3>
+<p>I had few people test the site and got their feedback. For tech savy people like my friend and my brother, there was no issues at all really with the site. But for less inclined people like my mother, there was a bit more of an issue. For the next project, I will have to find a balance bewteen making the site fool proof and not overdoing it with instructions. Most of the issue for the non tech savvy people came with creating the survey form. I though about changing the form to make it easier to use but after looking at the edit form at SurveyMonkey, I decided mine was actually better. Although theirs has more options, mine is simpler to use.
+<br /><br />
+The survey monkey edit page:
+<img src="https://i.gyazo.com/36d8c27eb459d2dc9d365c59a19b51b1.png" />
+</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2015-08-12T09:25:05-04:00">August 12, 2015</time></p>
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://drewburns.github.io/Welcome-to-the-blog/" class="pagination--pager" title="Welcome to the blog!
+">Previous</a>
+    
+    
+      <a href="http://drewburns.github.io/Css-Animations/" class="pagination--pager" title="Css Animations
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="http://drewburns.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2016 Your Name. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="http://drewburns.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Survey-Rails Project"
 date:   2015-08-12 9:25:5
 ---

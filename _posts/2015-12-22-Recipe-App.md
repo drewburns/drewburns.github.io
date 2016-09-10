@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Recipe App"
 date:   2015-12-22 9:25:5
 ---

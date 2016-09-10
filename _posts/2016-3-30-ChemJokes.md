@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "ChemJokes App"
 date:   2016-3-30 21:47:20
 ---

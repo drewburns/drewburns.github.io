@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Css Animations"
 date:   2015-08-24 16:47:20
 ---

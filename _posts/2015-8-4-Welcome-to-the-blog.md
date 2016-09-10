@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Welcome to the blog!"
 date:   2015-08-04 16:47:20
 ---

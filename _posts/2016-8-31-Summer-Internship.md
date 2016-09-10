@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Summer Internship"
 date:   2016-8-31 17:47:20
 ---

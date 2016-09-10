@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Swift Calculator"
 date:   2015-12-1 9:25:5
 ---

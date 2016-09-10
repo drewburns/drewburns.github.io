@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Mega Update"
 date:   2016-3-30 16:47:20
 ---

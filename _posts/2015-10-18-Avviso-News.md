@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Avviso News"
 date:   2015-10-18 10:25:5
 ---

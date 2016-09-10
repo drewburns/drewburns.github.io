@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Music Animation"
 date:   2015-12-22 9:25:6
 ---
