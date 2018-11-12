@@ -11,7 +11,7 @@ title                    : "Andrew Burns Blog"
 title_separator          : "-"
 name                     : "Andrew Burns"
 description              : "The adventures of Andrew Burns"
-url                      : "https://drewburns.github.io"
+url                      : "https://aburns.me"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "drewburns/drewburns.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Andrew Burns"
   avatar           : "bio-photo.jpg"
-  bio              : "Full stack/iOS developer, college student, entrepreneur"
+  bio              : "Full stack/iOS developer, college student, entrepreneur, maker of things"
   location         : "UConn"
   email            : "drewburnsbab@gmail.com"
   uri              :
