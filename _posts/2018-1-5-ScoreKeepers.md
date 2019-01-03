@@ -4,7 +4,7 @@ title:  "ScoreKeepers"
 date:   2018-1-5 17:47:20
 ---
 
-I met Max a few months ago at ACM (programming club) and joined his group that was building out his idea for a new sports website called <a href='http://scorekeepers.us/'>ScoreKeepers</a>. After working with a small team on building it React, I talked to Max and he decided to let me build it myself in Rails. I then enlisted the help of <a href='https://github.com/tjnoto'>Tim Noto </a> to help with the backend. Max didn't know a thing about programming but he learned quickly and was awesome in helping design the front end.
+I met Max a few months ago at ACM (programming club) and joined his group that was building out his idea for a new sports website called <a href='http://sportssite.herokuapp.com/'>ScoreKeepers</a>. After working with a small team on building it React, I talked to Max and he decided to let me build it myself in Rails. I then enlisted the help of <a href='https://github.com/tjnoto'>Tim Noto </a> to help with the backend. Max didn't know a thing about programming but he learned quickly and was awesome in helping design the front end.
 
 
 
