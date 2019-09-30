@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Andrew Burns Blog"
+title                    : "Andrew Burns"
 title_separator          : "-"
 name                     : "Andrew Burns"
 description              : "The adventures of Andrew Burns"
@@ -94,7 +94,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "andrew-burns-76b3a598"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
@@ -170,8 +170,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate: 10 # amount of posts to show
+paginate_path: /blog/page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 

@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "About"
-    url: http://drewburns.github.io/about_me/
+  - title: "Blog"
+    url: /blog/index.html
 
-  # - title: "Sample Navigation Link 2"
-  #   url: /
+  # - title: "Press"
+  #   url: press

@@ -5,10 +5,68 @@ author_profile: true
 
 {% include base_path %}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h1>Hi I'm Andrew!</h1>
 
+<ul style='list-style-type:none;'>
+  <li>
+    <h3><u>👋About Me</u></h3>
+    <ul>
+      <li><p id='age'> years old</p></li>
+      <li><p>CS Student at UConn</p></li>
+      <li><p>Programmer and Entrepreneur</p></li>
+    </ul>
+  </li>
+  <li>
+    <h3><u>👨🏻‍💻Work Experience</u></h3>
+    <ul>
+      <li><p>Balto (YC W19)</p></li>
+      <li><p>MunchBunch <a style='color:blue' href='/MunchBunch'>Read More --></a></p></li>
+    </ul>
+  </li>
+  <li>
+    <h3><u>🛠Projects</u></h3>
+    <ul>
+      <li><p>UConn Alexa Skill <a style='color:blue' href='/blog/Alexa-Skills-And-Vanity-Metrics/'>Read More --></a></p></li>
+      <li><p>Scorekeepers <a style='color:blue' href='/blog/ScoreKeepers'>Read More --></a></p></li>
+    </ul>
+  </li>
+  <li>
+    <h3><u>🌟Skills</u></h3>
+    <ul>
+      <li><p><b>Back end web apps:</b> Ruby, Ruby on Rails, Node, Express, Firebase, SQL, NoSQL</p></li>
+      <li><p><b>General web development:</b> React, Redux, HTML , CSS, Javascript</p></li>
+      <li><p><b>App Development:</b> Swift, XCode</p></li>
+      <li><p><b>Startup:</b> Worked at a YC startup and started my own company</p></li>
+    </ul>
+  </li>
+  <li>
+    <h3><u>🗞In the News</u></h3>
+    <ul>
+      <li><p><a style='color:blue' href='http://dailycampus.com/stories/2019/9/12/alexa-can-now-tell-you-whats-for-lunch-at-putnam'>Alexa can now tell you what’s for lunch at Putnam</a></p></li>
+      <li><p><a style='color:blue' href='http://dailycampus.com/stories/2018/10/30/new-food-delivery-service-owned-by-uconn-sophomore'>New Food Delivery Service Owned by UConn Sophmore</a></p></li>
+    </ul>
+  </li>
+  <li>
+    <h3><u>⚽️Hobbies/Other</u></h3>
+    <li><p><b>Sports:</b> Soccer, Basketball, Muay Thai, Terrible Surfer</p></li>
+    <li><p><b>Favorite Music:</b> Kanye West, Arctic Monkeys, Anderson Paak</p></li>
+    <li><p><b>Favorite Dishes to Make:</b> Jambalaya, Blackened Salmon, Potato Latkes</p></li>
+    <li><p><b>Travel Bucket List:</b> Morocco, Nepal, Peru</p></li>
+  </li>
+</ul>
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 {% for post in paginator.posts %}
   {% include archive-single.html %}
 {% endfor %}
 
-{% include paginator.html %}
+{% include paginator.html %} -->
+
+<script>
+    var x = document.getElementById("age");
+    var dob = "1998/11/04";
+    var birthday = new Date(dob);
+    var ageDifMs = Date.now() - birthday.getTime();
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+    x.innerHTML = age + " years old";
+  </script>
